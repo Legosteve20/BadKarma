@@ -1,0 +1,13 @@
+screen_precision = 0
+console_precision = 0
+DegreeInstnace = [0 for x in range(20)]
+LIST = [0 for x in range(1)]
+
+def when_started1():
+    global DegreeInstnace, LIST, screen_precision, console_precision
+    Lift.set_max_torque(150, PERCENT)
+    Lift.set_velocity(150, PERCENT)
+    drivetrain.set_drive_velocity(150, PERCENT)
+    drivetrain.set_turn_velocity(40, PERCENT)
+
+when_started1()
